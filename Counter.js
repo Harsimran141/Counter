@@ -1,17 +1,17 @@
 const input = document.querySelector('.count');
-const decbtn = document.querySelector('.Decrement');
 const Addbtn = document.querySelector('.Add');
-const reset = document.querySelector('.restart')
+const Decbtn = document.querySelector('.Decrement');
+const Reset = document.querySelector('.restart');
 let counter = 0;
 Addbtn.addEventListener('click',()=>{
     counter++;
-   input.value = counter;   
+input.value = counter;
 })
-decbtn.addEventListener('click',()=>{
+Decbtn.addEventListener('click',()=>{
     counter--;
     input.value = counter;
 })
-reset.addEventListener('click',()=>{
-    counter = 0;
+Reset.addEventListener('click',()=>{
+    counter = "";
     input.value = counter;
 })
